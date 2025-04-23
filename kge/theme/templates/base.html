@@ -1,0 +1,49 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Django Tailwind</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-black font-serif leading-normal tracking-normal">
+
+			<section class="fixed w-full flex items-center justify-center glossy">{% include 'nav.html' %}</section>
+			<!--HERO-->
+			<section class="flex items-center h-auto justify-center">
+				<section class="flex items-center w-[97%] h-screen justify-center bg-[url('./img/26.png')] bg-cover bg-no-repeat bg-center rounded-bl-[70px] rounded-br-[70px]">
+					<div>
+						<h1 class="text-6xl hero-text">Kolbász Galactic Empire</h1>
+					</div>	
+				</section>
+			</section>
+
+			<section class="flex items-center h-[100px] justify-center pt-[100px]">
+				<h2 class="text-5xl text-white">Szolgáltatások</h2>
+			</section>
+
+			<section class="flex items-center h-screen justify-center bg-black">
+				<!--Kolbászflix-->		
+				<section class="md:flex items-center justify-center sm:block">
+					<div class="">
+						<h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-fuchsia-500 from-sky-400">Kolbászflix</span> | Jellyfin szerver.</h1>
+						<p class="text-lg font-normal w-[400px] text-gray-500 lg:text-xl dark:text-gray-400">Szipi szupi sorozatok, filmek, mesék 
+							meg minden bánat. Csak a <span class=" text-fuchsia-600">legelitebb</span> Kolbász elvtársak számára elérhető.</p>
+						<div class="mt-6">
+							<a href="#" class="text-white p-3 border rounded-lg">Kolbászolj oda</a>
+						</div>
+					</div>
+					<div>
+						<img src="{% static 'css/dist/img/jellyfin.png' %}" alt="Jellyfin" class="h-[250px]">
+					</div>
+				</section>
+			</section>
+	</body>
+</html>
