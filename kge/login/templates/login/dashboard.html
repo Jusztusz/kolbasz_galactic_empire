@@ -7,11 +7,10 @@
     <title>Belső kör</title>
     {% tailwind_css %}
 </head>
-<body>
-    {% include 'nav.html' %}
+<body class="bg-black text-white">
+    {% include 'nav_loged_in.html' %}
     <h2>Üdv, {{ user.username }}!</h2>
     <p>Ez egy védett oldal.</p>
-    <a href="{% url 'logout' %}">Kijelentkezés</a>
 </body>
 </html>
 
