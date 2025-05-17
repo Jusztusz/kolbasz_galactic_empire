@@ -28,4 +28,13 @@
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.39);
   }
+  .kolbasz_collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  }
+
+.kolbasz_collapsible.open {
+  max-height: 500px; /* elég nagy szám, hogy elférjen a tartalom */
+  }
 }

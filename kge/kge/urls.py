@@ -24,4 +24,5 @@ urlpatterns = [
     path('', home, name='home'),
     path('info_kolbaszflix/', info_kolbaszflix, name='info_kolbaszflix'),
     path('login/', include('login.urls')),
+    path('geoip/', include('geoip.urls'), name='geoip'),
 ]

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     'login',
+    'geoip',
 ]
 
 TAILWIND_APP_NAME = 'theme'
